@@ -87,8 +87,10 @@
 
 	/* File operators */
 #ifdef _WIN32
-  #define ObFtell64(pFile) _telli64(pFile->_file)
-  #define ObFseek64(pFile, Offset, Flag) _lseeki64(pFile->_file, Offset, Flag)
+  //#define ObFtell64(pFile) _telli64(pFile->_file)
+  //#define ObFseek64(pFile, Offset, Flag) _lseeki64(pFile->_file, Offset, Flag)
+  #define ObFtell64(pFile) _ftelli64(pFile)
+  #define ObFseek64(pFile, Offset, Flag) _fseeki64(pFile, Offset, Flag)
 #else
   #define ObFtell64(pFile) ftello64(pFile)
   #define ObFseek64(pFile, Offset, Flag) fseeko64(pFile, Offset, Flag)

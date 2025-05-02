@@ -42,6 +42,48 @@
 
 
 /*===========================================================================
+*
+* Begin Predefined CompareGenKeys Functions
+*
+*=========================================================================*/
+inline bool CompareGenKeys(dword Key1, dword Key2) {
+	return (Key1 == Key2);
+}
+
+inline bool CompareGenKeys(const char* Key1, const char* Key2) {
+	return (SafeStringCompare(Key1, Key2, true) == 0);
+}
+/*===========================================================================
+*		End of Predefined CompareGenKeys Functions
+*=========================================================================*/
+
+
+/*===========================================================================
+*
+* Begin Predefined HashGenKey Functions
+*
+*=========================================================================*/
+inline dword HashGenKey(dword Key) {
+	return (Key >> 4);
+}
+
+
+inline dword HashGenKey(const char* Key) {
+	dword nHash = 0;
+
+	while (*Key) {
+		nHash = (nHash << 5) + nHash + tolower(*Key);
+		++Key;
+	}
+
+	return nHash;
+}
+/*===========================================================================
+*		End of Predefined HashGenKey Functions
+*=========================================================================*/
+
+
+/*===========================================================================
  *
  * Begin Class TGenPtrMap Definition
  *
@@ -524,47 +566,6 @@ void TGenPtrMap<TKey, TValue, TKeyArg>::SetAt (TKeyArg Key, TValue* pRecord) {
  *		End of Class Method TGenPtrMap::SetAt()
  *=========================================================================*/
 
-
-/*===========================================================================
- *
- * Begin Predefined CompareGenKeys Functions
- *
- *=========================================================================*/
-inline bool CompareGenKeys (dword Key1, dword Key2) {
-  return (Key1 == Key2);
-}
-
-inline bool CompareGenKeys (const char* Key1, const char* Key2) {
-  return (SafeStringCompare(Key1, Key2, true) == 0);
-}
-/*===========================================================================
- *		End of Predefined CompareGenKeys Functions
- *=========================================================================*/
-
-
-/*===========================================================================
- *
- * Begin Predefined HashGenKey Functions
- *
- *=========================================================================*/
-inline dword HashGenKey (dword Key) {
-  return (Key >> 4);
-}
-
-
-inline dword HashGenKey (const char* Key) {
-  dword nHash = 0;
-
-  while (*Key) {
-    nHash = (nHash << 5) + nHash + tolower(*Key);
-    ++Key;
-   }
-
-  return nHash;
-}
-/*===========================================================================
- *		End of Predefined HashGenKey Functions
- *=========================================================================*/
 
 
 #endif

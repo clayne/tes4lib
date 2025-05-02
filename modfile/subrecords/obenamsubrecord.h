@@ -29,7 +29,7 @@
  *=========================================================================*/
 
 	/* Standard subrecord size in bytes */
-  #define OBENAM_SUBRECORD_SIZE	12
+  #define OBENAM_SUBRECORD_SIZE	16
 
 /*===========================================================================
  *		End of Definitions
@@ -47,7 +47,8 @@
 	obformid_t  FormID1;
 	obformid_t  FormID2;
 	obformid_t  FormID3;
-   };
+	obformid_t  FormID4;
+  };
 
 #pragma pack(pop)
 /*===========================================================================
@@ -74,7 +75,13 @@ protected:
 protected:
 
 	/* Input/output the subrecord data */
-  virtual bool ReadData  (CObFile& File) { memset(&m_Data, 0, sizeof(m_Data)); return File.Read(&m_Data,  m_RecordSize); }
+  virtual bool ReadData(CObFile& File) 
+  { 
+	  //SystemLog.Printf("RACE::ENAM Size = %d at 0x%08X", m_RecordSize, File.Tell()); 
+	  if (m_RecordSize > OBENAM_SUBRECORD_SIZE) throw("CObEnamSubrecord::Read -- ENAM Subrecord larger than the expected 16 bytes!");
+	  memset(&m_Data, 0, sizeof(m_Data)); 
+	  return File.Read(&m_Data, m_RecordSize); 
+  }
   virtual bool WriteData (CObFile& File) { return File.Write(&m_Data, m_RecordSize); }
 
 
@@ -104,6 +111,11 @@ public:
 	  m_Data.FormID3 = NewID;
 	  ++Count;
 	}
+
+	if (m_Data.FormID4 == OldID) {
+		m_Data.FormID4 = NewID;
+		++Count;
+	}
 	return (Count); 
   }
 
@@ -127,6 +139,7 @@ public:
 	if (m_Data.FormID1 == FormID) ++Count;
 	if (m_Data.FormID2 == FormID) ++Count;
 	if (m_Data.FormID3 == FormID) ++Count;
+	if (m_Data.FormID4 == FormID) ++Count;
 	return (Count);
   }
 
@@ -135,7 +148,7 @@ public:
 
   	/* Fixup the modindex of formids */
   virtual bool FixupFormID (CObFormidFixupArray& FixupArray) {
-	return ObFixupFormid(m_Data.FormID1, m_Data.FormID1, FixupArray) && ObFixupFormid(m_Data.FormID2, m_Data.FormID2, FixupArray) && ObFixupFormid(m_Data.FormID3, m_Data.FormID3, FixupArray);
+	return ObFixupFormid(m_Data.FormID1, m_Data.FormID1, FixupArray) && ObFixupFormid(m_Data.FormID2, m_Data.FormID2, FixupArray) && ObFixupFormid(m_Data.FormID3, m_Data.FormID3, FixupArray) && ObFixupFormid(m_Data.FormID4, m_Data.FormID4, FixupArray);
   }
 
 	/* Get class members */

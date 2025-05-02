@@ -1,0 +1,991 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{f4c5fe3a-5f6d-4e36-9ff3-d659a10d05f7}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{b63bdac3-4f62-4e33-b80c-8013af018b42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\modfile">
+      <UniqueIdentifier>{839376a5-9a9c-4c21-ba8b-6abb22680b98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\modfile\subrecords">
+      <UniqueIdentifier>{3f6fba96-06d0-46f2-a000-f8aff4bed067}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\modfile\records">
+      <UniqueIdentifier>{546315a3-f925-4ae2-ba75-f0ed5c2525a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\modfile\groups">
+      <UniqueIdentifier>{2c0c3fdc-bf59-415b-8636-27fae034b9e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\modfile\handlers">
+      <UniqueIdentifier>{d84c8bb8-f95d-43b9-8156-1d658dd9a133}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\modfile\compiler">
+      <UniqueIdentifier>{61ef32bd-15e0-4ad1-b1a1-56a0a7e04b04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bsa">
+      <UniqueIdentifier>{1de572d6-8047-498e-ac0a-76ab4a887500}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{78775b44-097c-452e-bbdd-e142a12962ac}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Common.">
+      <UniqueIdentifier>{1ce55c3b-e368-4e79-9326-77cffa6f2b57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\modfile.">
+      <UniqueIdentifier>{8152fa92-bd92-41a6-b6a2-79b60e0d0a02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\modfile.\subrecords.">
+      <UniqueIdentifier>{5a78fe27-15a7-4b5b-b276-01d4cc742da7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\modfile.\records.">
+      <UniqueIdentifier>{b6a2b2c7-4638-4552-a7af-7a0da05bf43e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\modfile.\groups.">
+      <UniqueIdentifier>{06929312-89c7-4d26-b304-7380dd1edeb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\modfile.\handlers.">
+      <UniqueIdentifier>{4ef0f755-3d8b-420a-9bd2-7f58c883c0b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\modfile.\compiler.">
+      <UniqueIdentifier>{52ce6a7c-5582-40e6-8165-0aaa92d83483}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\bsa.">
+      <UniqueIdentifier>{7e39873a-a554-4ff5-b423-bb2f8875e9b6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\common\csvfile.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\filebuffer.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\obcallback.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\obconfigentry.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\obconfigfile.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\oberror.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\oberrorhandler.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\obfile.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\oblogfile.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\obmemfile.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\obptrarray.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\obtime.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\obutils.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\sstring.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\textutils.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\subrecords\obctdasubrecord.cpp">
+      <Filter>Source Files\modfile\subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\subrecords\obctdtsubrecord.cpp">
+      <Filter>Source Files\modfile\subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\subrecords\obefitsubrecord.cpp">
+      <Filter>Source Files\modfile\subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\subrecords\obenitsubrecord.cpp">
+      <Filter>Source Files\modfile\subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\subrecords\obformidarraysubrecord.cpp">
+      <Filter>Source Files\modfile\subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\subrecords\obhedrsubrecord.cpp">
+      <Filter>Source Files\modfile\subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\subrecords\obnamesubrecord.cpp">
+      <Filter>Source Files\modfile\subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\subrecords\obpgrlsubrecord.cpp">
+      <Filter>Source Files\modfile\subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\subrecords\obrdgssubrecord.cpp">
+      <Filter>Source Files\modfile\subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\subrecords\obrdotsubrecord.cpp">
+      <Filter>Source Files\modfile\subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\subrecords\obrdsdsubrecord.cpp">
+      <Filter>Source Files\modfile\subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\subrecords\obrdwtsubrecord.cpp">
+      <Filter>Source Files\modfile\subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\subrecords\obscitsubrecord.cpp">
+      <Filter>Source Files\modfile\subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\subrecords\obspitsubrecord.cpp">
+      <Filter>Source Files\modfile\subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\subrecords\obstring1subrecord.cpp">
+      <Filter>Source Files\modfile\subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\subrecords\obstringsubrecord.cpp">
+      <Filter>Source Files\modfile\subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\subrecords\obsubreccont.cpp">
+      <Filter>Source Files\modfile\subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\subrecords\obsubrecord.cpp">
+      <Filter>Source Files\modfile\subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\subrecords\obwlstsubrecord.cpp">
+      <Filter>Source Files\modfile\subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obachrrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obacrerecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obactirecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obalchrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obammorecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obaniorecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obapparecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obarmorecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obbasereccont.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obbaserecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obbookrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obbsgnrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obcellrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obcheckrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obclmtrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obclotrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obcontrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obcrearecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obdialrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obdoorrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obeffitemrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obenchrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obfactrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obflorrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obidlerecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obidrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obinforecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obingrrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obitem1record.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obitem2record.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\oblandrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\oblighrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\oblscrrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obltexrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\oblvlcrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\oblvlirecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\oblvsprecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obmgefrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obmiscrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obnpcrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obpackrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obpgrdrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obqustrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obracerecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obreccont.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obrefrrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obregnrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obscptrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obsgstrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obspelrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obtes4record.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obwatrrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obweaprecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obwrldrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obwthrrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\groups\obfilegroup.cpp">
+      <Filter>Source Files\modfile\groups</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\groups\obgroup.cpp">
+      <Filter>Source Files\modfile\groups</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\groups\obgrupcont.cpp">
+      <Filter>Source Files\modfile\groups</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\groups\obtypegroup.cpp">
+      <Filter>Source Files\modfile\groups</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\obmultirecordhandler.cpp">
+      <Filter>Source Files\modfile\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\obsimplerecordhandler.cpp">
+      <Filter>Source Files\modfile\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\compiler\charclass.cpp">
+      <Filter>Source Files\modfile\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\compiler\charclassarray.cpp">
+      <Filter>Source Files\modfile\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\compiler\customcompiler.cpp">
+      <Filter>Source Files\modfile\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\compiler\scansourcestring.cpp">
+      <Filter>Source Files\modfile\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\compiler\tokentable.cpp">
+      <Filter>Source Files\modfile\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\compiler\tokentablearray.cpp">
+      <Filter>Source Files\modfile\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\compiler\tokentableresult.cpp">
+      <Filter>Source Files\modfile\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\compiler\tokentablerow.cpp">
+      <Filter>Source Files\modfile\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\compiler\tokentype.cpp">
+      <Filter>Source Files\modfile\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\compiler\tokentypearray.cpp">
+      <Filter>Source Files\modfile\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\obespfile.cpp">
+      <Filter>Source Files\modfile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\obexport.cpp">
+      <Filter>Source Files\modfile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\obfields.cpp">
+      <Filter>Source Files\modfile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\obmoddefs.cpp">
+      <Filter>Source Files\modfile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\obrecordcreate.cpp">
+      <Filter>Source Files\modfile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\obrectype.cpp">
+      <Filter>Source Files\modfile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\obundoitem.cpp">
+      <Filter>Source Files\modfile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bsafile\obbsafile.cpp">
+      <Filter>Source Files\bsa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bsafile\obbsafilerecord.cpp">
+      <Filter>Source Files\bsa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bsafile\obbsafolder.cpp">
+      <Filter>Source Files\bsa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bsafile\obresourcefile.cpp">
+      <Filter>Source Files\bsa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bsafile\obresourcefolder.cpp">
+      <Filter>Source Files\bsa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bsafile\obresourcehandler.cpp">
+      <Filter>Source Files\bsa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bsafile\obresourceinstance.cpp">
+      <Filter>Source Files\bsa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obbaserefrrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\compiler\obscriptfunctions.cpp">
+      <Filter>Source Files\modfile\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obfurnrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obkeymrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obslgmrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obsounrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\records\obstatrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\subrecords\obdatasubrecord.cpp">
+      <Filter>Source Files\modfile\records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modfile\compiler\obscriptfunction.cpp">
+      <Filter>Source Files\modfile\compiler</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\common\zlib\zdll.lib">
+      <Filter>Source Files\Common</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\common\csvfile.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\dl_map.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\filebuffer.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\obarray.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\obblockallocator.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\obcallback.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\obconfigentry.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\obconfigfile.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\oberror.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\oberrorhandler.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\obfile.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\oblogfile.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\obmemfile.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\obplatform.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\obptrarray.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\obsimplemap.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\obtime.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\obtypes.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\obutils.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\obversion.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\sstring.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\textutils.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\zlib\zconf.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\zlib\zlib.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obammodatasubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obappadatasubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obarmodatasubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obatxtsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obbookdatasubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obbytesubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obclotdatasubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obcntosubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obctdasubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obctdtsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obdnamsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obdwordsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obefitsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obenamsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obenit8subrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obenitsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obfloatsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obformidarraysubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obformidsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obhedrsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obidledatasubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obingrenitsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obint64subrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\oblighdatasubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\oblnamsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\oblongsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\oblvlosubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obmgefdatasubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obmiscdatasubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obnamesubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obpgrlsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obpldtsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obposanglesubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obpositionsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obptdtsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obqstasubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obrdgssubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obrdotsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obrdsdsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obrdwtsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obrefrdatasubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obschrsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obscitsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obscrosubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obsgstdatasubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obsnamsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obspitsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obstring1subrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obstringsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obsubreccont.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obvnamsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obvtexsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obweapdatasubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obwlstsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obwordsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obwthrrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obxespsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obxlocsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obxnamsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\subrecords\obxtelsubrecord.h">
+      <Filter>Header Files\modfile.\subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obachrrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obacrerecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obactirecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obalchrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obammorecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obaniorecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obapparecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obarmorecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obbasereccont.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obbaserecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obbookrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obbsgnrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obcellrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obcheckrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obclmtrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obclotrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obcontrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obcrearecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obdialrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obdoorrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obeffitemrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obenchrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obfactrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obflorrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obidlerecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obidrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obinforecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obingrrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obitem1record.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obitem2record.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\oblandrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\oblighrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\oblscrrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obltexrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\oblvlcrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\oblvlirecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\oblvsprecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obmgefrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obmiscrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obnpcrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obpackrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obpgrdrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obqustrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obracerecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obreccont.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obrecordfield.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obrecordmap.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obrefrrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obregnrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obscptrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obsgstrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obspelrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obtes4record.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obwatrrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obweaprecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\records\obwrldrecord.h">
+      <Filter>Header Files\modfile.\records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\groups\obblockgroup.h">
+      <Filter>Header Files\modfile.\groups.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\groups\obfilegroup.h">
+      <Filter>Header Files\modfile.\groups.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\groups\obformidgroup.h">
+      <Filter>Header Files\modfile.\groups.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\groups\obgridgroup.h">
+      <Filter>Header Files\modfile.\groups.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\groups\obgroup.h">
+      <Filter>Header Files\modfile.\groups.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\groups\obgrupcont.h">
+      <Filter>Header Files\modfile.\groups.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\groups\obtypegroup.h">
+      <Filter>Header Files\modfile.\groups.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\obmultirecordhandler.h">
+      <Filter>Header Files\modfile.\handlers.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\obrecordhandler.h">
+      <Filter>Header Files\modfile.\handlers.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\obsimplerecordhandler.h">
+      <Filter>Header Files\modfile.\handlers.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\compiler\charclass.h">
+      <Filter>Header Files\modfile.\compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\compiler\charclassarray.h">
+      <Filter>Header Files\modfile.\compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\compiler\customcompiler.h">
+      <Filter>Header Files\modfile.\compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\compiler\scansource.h">
+      <Filter>Header Files\modfile.\compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\compiler\scansourcestring.h">
+      <Filter>Header Files\modfile.\compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\compiler\tokentable.h">
+      <Filter>Header Files\modfile.\compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\compiler\tokentablearray.h">
+      <Filter>Header Files\modfile.\compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\compiler\tokentableresult.h">
+      <Filter>Header Files\modfile.\compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\compiler\tokentablerow.h">
+      <Filter>Header Files\modfile.\compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\compiler\tokentype.h">
+      <Filter>Header Files\modfile.\compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\compiler\tokentypearray.h">
+      <Filter>Header Files\modfile.\compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\obespfile.h">
+      <Filter>Header Files\modfile.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\obexport.h">
+      <Filter>Header Files\modfile.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\obfields.h">
+      <Filter>Header Files\modfile.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\obmoddefs.h">
+      <Filter>Header Files\modfile.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\obrectype.h">
+      <Filter>Header Files\modfile.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modfile\obundoitem.h">
+      <Filter>Header Files\modfile.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bsafile\obbsafile.h">
+      <Filter>Header Files\bsa.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bsafile\obbsafilerecord.h">
+      <Filter>Header Files\bsa.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bsafile\obbsafolder.h">
+      <Filter>Header Files\bsa.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bsafile\obresourcebase.h">
+      <Filter>Header Files\bsa.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bsafile\obresourcefile.h">
+      <Filter>Header Files\bsa.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bsafile\obresourcefolder.h">
+      <Filter>Header Files\bsa.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bsafile\obresourcehandler.h">
+      <Filter>Header Files\bsa.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bsafile\obresourceinstance.h">
+      <Filter>Header Files\bsa.</Filter>
+    </ClInclude>
+    <ClInclude Include="tes4lib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

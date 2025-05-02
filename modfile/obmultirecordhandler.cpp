@@ -1743,7 +1743,7 @@ CObRecord* CObMultiRecordHandler::MakeRecordActivePriv (CObRecord* pRecord, cons
   CObGroup*        pGroup;
   CObGroup*        pCurrentGroup;
   CObGroup*        pOverallGroup;
-  CObGroup*        pGroup1;
+  CObGroup*        pGroup1 = nullptr;
   int		   Index;
 
 	/* Ignore if already active */

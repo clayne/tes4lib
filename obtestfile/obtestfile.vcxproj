@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{DDD1EDCC-87CA-4BD5-8D20-5A2D87660493}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\obtestfile.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Debug\obtestfile.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x1009</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\obtestfile.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>.\Debug\obtestfile.exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\obtestfile.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Release\obtestfile.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x1009</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\obtestfile.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>.\Release\obtestfile.exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\common\csvfile.cpp" />
+    <ClCompile Include="..\common\obcallback.cpp" />
+    <ClCompile Include="..\common\oberror.cpp" />
+    <ClCompile Include="..\common\oberrorhandler.cpp" />
+    <ClCompile Include="..\common\obfile.cpp" />
+    <ClCompile Include="..\common\oblogfile.cpp" />
+    <ClCompile Include="..\common\obmemfile.cpp" />
+    <ClCompile Include="..\common\obptrarray.cpp" />
+    <ClCompile Include="..\common\obtime.cpp" />
+    <ClCompile Include="..\common\obutils.cpp" />
+    <ClCompile Include="..\common\sstring.cpp" />
+    <ClCompile Include="..\common\textutils.cpp" />
+    <ClCompile Include="..\modfile\compiler\obscriptfunction.cpp" />
+    <ClCompile Include="..\modfile\compiler\obscriptfunctions.cpp" />
+    <ClCompile Include="..\modfile\groups\obfilegroup.cpp" />
+    <ClCompile Include="..\modfile\groups\obgroup.cpp" />
+    <ClCompile Include="..\modfile\groups\obgrupcont.cpp" />
+    <ClCompile Include="..\modfile\groups\obtypegroup.cpp" />
+    <ClCompile Include="..\modfile\obespfile.cpp" />
+    <ClCompile Include="..\modfile\obeventhandler.cpp" />
+    <ClCompile Include="..\modfile\obfields.cpp" />
+    <ClCompile Include="..\modfile\obimport.cpp" />
+    <ClCompile Include="..\modfile\obmoddefs.cpp" />
+    <ClCompile Include="..\modfile\obmultirecordhandler.cpp" />
+    <ClCompile Include="..\modfile\obrecordcreate.cpp" />
+    <ClCompile Include="..\modfile\obrectype.cpp" />
+    <ClCompile Include="..\modfile\obsimplerecordhandler.cpp" />
+    <ClCompile Include="..\modfile\obundoitem.cpp" />
+    <ClCompile Include="..\modfile\records\obachrrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obacrerecord.cpp" />
+    <ClCompile Include="..\modfile\records\obactirecord.cpp" />
+    <ClCompile Include="..\modfile\records\obalchrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obammorecord.cpp" />
+    <ClCompile Include="..\modfile\records\obaniorecord.cpp" />
+    <ClCompile Include="..\modfile\records\obapparecord.cpp" />
+    <ClCompile Include="..\modfile\records\obarmorecord.cpp" />
+    <ClCompile Include="..\modfile\records\obbasereccont.cpp" />
+    <ClCompile Include="..\modfile\records\obbaserecord.cpp" />
+    <ClCompile Include="..\modfile\records\obbaserefrrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obbookrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obbsgnrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obcellrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obclmtrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obclotrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obcontrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obcrearecord.cpp" />
+    <ClCompile Include="..\modfile\records\obdialrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obdoorrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obeffitemrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obenchrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obfactrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obflorrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obfurnrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obidlerecord.cpp" />
+    <ClCompile Include="..\modfile\records\obidrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obinforecord.cpp" />
+    <ClCompile Include="..\modfile\records\obingrrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obitem1record.cpp" />
+    <ClCompile Include="..\modfile\records\obitem2record.cpp" />
+    <ClCompile Include="..\modfile\records\obkeymrecord.cpp" />
+    <ClCompile Include="..\modfile\records\oblandrecord.cpp" />
+    <ClCompile Include="..\modfile\records\oblighrecord.cpp" />
+    <ClCompile Include="..\modfile\records\oblscrrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obltexrecord.cpp" />
+    <ClCompile Include="..\modfile\records\oblvlcrecord.cpp" />
+    <ClCompile Include="..\modfile\records\oblvlirecord.cpp" />
+    <ClCompile Include="..\modfile\records\oblvsprecord.cpp" />
+    <ClCompile Include="..\modfile\records\obmgefrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obmiscrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obnpcrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obpackrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obpgrdrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obqustrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obracerecord.cpp" />
+    <ClCompile Include="..\modfile\records\obreccont.cpp" />
+    <ClCompile Include="..\modfile\records\obrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obrefrrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obregnrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obscptrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obsgstrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obslgmrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obsounrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obspelrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obstatrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obtes4record.cpp" />
+    <ClCompile Include="..\modfile\records\obwatrrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obweaprecord.cpp" />
+    <ClCompile Include="..\modfile\records\obwrldrecord.cpp" />
+    <ClCompile Include="..\modfile\records\obwthrrecord.cpp" />
+    <ClCompile Include="..\modfile\subrecords\obctdasubrecord.cpp" />
+    <ClCompile Include="..\modfile\subrecords\obctdtsubrecord.cpp" />
+    <ClCompile Include="..\modfile\subrecords\obdatasubrecord.cpp" />
+    <ClCompile Include="..\modfile\subrecords\obefitsubrecord.cpp" />
+    <ClCompile Include="..\modfile\subrecords\obenitsubrecord.cpp" />
+    <ClCompile Include="..\modfile\subrecords\obformidarraysubrecord.cpp" />
+    <ClCompile Include="..\modfile\subrecords\obhedrsubrecord.cpp" />
+    <ClCompile Include="..\modfile\subrecords\obnamesubrecord.cpp" />
+    <ClCompile Include="..\modfile\subrecords\obpgrlsubrecord.cpp" />
+    <ClCompile Include="..\modfile\subrecords\obrdgssubrecord.cpp" />
+    <ClCompile Include="..\modfile\subrecords\obrdotsubrecord.cpp" />
+    <ClCompile Include="..\modfile\subrecords\obrdsdsubrecord.cpp" />
+    <ClCompile Include="..\modfile\subrecords\obrdwtsubrecord.cpp" />
+    <ClCompile Include="..\modfile\subrecords\obscitsubrecord.cpp" />
+    <ClCompile Include="..\modfile\subrecords\obspitsubrecord.cpp" />
+    <ClCompile Include="..\modfile\subrecords\obstring1subrecord.cpp" />
+    <ClCompile Include="..\modfile\subrecords\obstringsubrecord.cpp" />
+    <ClCompile Include="..\modfile\subrecords\obsubreccont.cpp" />
+    <ClCompile Include="..\modfile\subrecords\obsubrecord.cpp" />
+    <ClCompile Include="..\modfile\subrecords\obwlstsubrecord.cpp" />
+    <ClCompile Include="obtestfile.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\common\zlib\zdll.exp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\common\zlib\zdll.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\common\csvfile.h" />
+    <ClInclude Include="..\common\dl_map.h" />
+    <ClInclude Include="..\common\obarray.h" />
+    <ClInclude Include="..\common\obblockallocator.h" />
+    <ClInclude Include="..\common\obcallback.h" />
+    <ClInclude Include="..\common\oberror.h" />
+    <ClInclude Include="..\common\oberrorhandler.h" />
+    <ClInclude Include="..\common\obfile.h" />
+    <ClInclude Include="..\common\oblogfile.h" />
+    <ClInclude Include="..\common\obmemfile.h" />
+    <ClInclude Include="..\common\obplatform.h" />
+    <ClInclude Include="..\common\obptrarray.h" />
+    <ClInclude Include="..\common\obtime.h" />
+    <ClInclude Include="..\common\obtypes.h" />
+    <ClInclude Include="..\common\obutils.h" />
+    <ClInclude Include="..\common\obversion.h" />
+    <ClInclude Include="..\common\sstring.h" />
+    <ClInclude Include="..\common\textutils.h" />
+    <ClInclude Include="..\common\zlib\zconf.h" />
+    <ClInclude Include="..\common\zlib\zlib.h" />
+    <ClInclude Include="..\modfile\compiler\obscriptfunction.h" />
+    <ClInclude Include="..\modfile\compiler\obscriptfunctions.h" />
+    <ClInclude Include="..\modfile\groups\obblockgroup.h" />
+    <ClInclude Include="..\modfile\groups\obfilegroup.h" />
+    <ClInclude Include="..\modfile\groups\obformidgroup.h" />
+    <ClInclude Include="..\modfile\groups\obgridgroup.h" />
+    <ClInclude Include="..\modfile\groups\obgroup.h" />
+    <ClInclude Include="..\modfile\groups\obgrupcont.h" />
+    <ClInclude Include="..\modfile\groups\obtypegroup.h" />
+    <ClInclude Include="..\modfile\obespfile.h" />
+    <ClInclude Include="..\modfile\obeventhandler.h" />
+    <ClInclude Include="..\modfile\obfields.h" />
+    <ClInclude Include="..\modfile\obimport.h" />
+    <ClInclude Include="..\modfile\oblistener.h" />
+    <ClInclude Include="..\modfile\oblistenevent.h" />
+    <ClInclude Include="..\modfile\obmoddefs.h" />
+    <ClInclude Include="..\modfile\obmultirecordhandler.h" />
+    <ClInclude Include="..\modfile\obrecordhandler.h" />
+    <ClInclude Include="..\modfile\obrectype.h" />
+    <ClInclude Include="..\modfile\obsimplerecordhandler.h" />
+    <ClInclude Include="..\modfile\obundoitem.h" />
+    <ClInclude Include="..\modfile\records\obachrrecord.h" />
+    <ClInclude Include="..\modfile\records\obacrerecord.h" />
+    <ClInclude Include="..\modfile\records\obactirecord.h" />
+    <ClInclude Include="..\modfile\records\obalchrecord.h" />
+    <ClInclude Include="..\modfile\records\obammorecord.h" />
+    <ClInclude Include="..\modfile\records\obaniorecord.h" />
+    <ClInclude Include="..\modfile\records\obapparecord.h" />
+    <ClInclude Include="..\modfile\records\obarmorecord.h" />
+    <ClInclude Include="..\modfile\records\obbasereccont.h" />
+    <ClInclude Include="..\modfile\records\obbaserecord.h" />
+    <ClInclude Include="..\modfile\records\obbookrecord.h" />
+    <ClInclude Include="..\modfile\records\obbsgnrecord.h" />
+    <ClInclude Include="..\modfile\records\obcellrecord.h" />
+    <ClInclude Include="..\modfile\records\obclmtrecord.h" />
+    <ClInclude Include="..\modfile\records\obclotrecord.h" />
+    <ClInclude Include="..\modfile\records\obcontrecord.h" />
+    <ClInclude Include="..\modfile\records\obcrearecord.h" />
+    <ClInclude Include="..\modfile\records\obdialrecord.h" />
+    <ClInclude Include="..\modfile\records\obdoorrecord.h" />
+    <ClInclude Include="..\modfile\records\obeffitemrecord.h" />
+    <ClInclude Include="..\modfile\records\obenchrecord.h" />
+    <ClInclude Include="..\modfile\records\obfactrecord.h" />
+    <ClInclude Include="..\modfile\records\obflorrecord.h" />
+    <ClInclude Include="..\modfile\records\obfurnrecord.h" />
+    <ClInclude Include="..\modfile\records\obidlerecord.h" />
+    <ClInclude Include="..\modfile\records\obidrecord.h" />
+    <ClInclude Include="..\modfile\records\obinforecord.h" />
+    <ClInclude Include="..\modfile\records\obingrrecord.h" />
+    <ClInclude Include="..\modfile\records\obitem1record.h" />
+    <ClInclude Include="..\modfile\records\obitem2record.h" />
+    <ClInclude Include="..\modfile\records\obkeymrecord.h" />
+    <ClInclude Include="..\modfile\records\oblandrecord.h" />
+    <ClInclude Include="..\modfile\records\oblighrecord.h" />
+    <ClInclude Include="..\modfile\records\oblscrrecord.h" />
+    <ClInclude Include="..\modfile\records\obltexrecord.h" />
+    <ClInclude Include="..\modfile\records\oblvlcrecord.h" />
+    <ClInclude Include="..\modfile\records\oblvlirecord.h" />
+    <ClInclude Include="..\modfile\records\oblvsprecord.h" />
+    <ClInclude Include="..\modfile\records\obmgefrecord.h" />
+    <ClInclude Include="..\modfile\records\obmiscrecord.h" />
+    <ClInclude Include="..\modfile\records\obnpcrecord.h" />
+    <ClInclude Include="..\modfile\records\obpackrecord.h" />
+    <ClInclude Include="..\modfile\records\obpgrdrecord.h" />
+    <ClInclude Include="..\modfile\records\obqustrecord.h" />
+    <ClInclude Include="..\modfile\records\obracerecord.h" />
+    <ClInclude Include="..\modfile\records\obreccont.h" />
+    <ClInclude Include="..\modfile\records\obrecord.h" />
+    <ClInclude Include="..\modfile\records\obrecordfield.h" />
+    <ClInclude Include="..\modfile\records\obrecordmap.h" />
+    <ClInclude Include="..\modfile\records\obrefrrecord.h" />
+    <ClInclude Include="..\modfile\records\obregnrecord.h" />
+    <ClInclude Include="..\modfile\records\obscptrecord.h" />
+    <ClInclude Include="..\modfile\records\obsgstrecord.h" />
+    <ClInclude Include="..\modfile\records\obslgmrecord.h" />
+    <ClInclude Include="..\modfile\records\obsounrecord.h" />
+    <ClInclude Include="..\modfile\records\obspelrecord.h" />
+    <ClInclude Include="..\modfile\records\obstatrecord.h" />
+    <ClInclude Include="..\modfile\records\obtes4record.h" />
+    <ClInclude Include="..\modfile\records\obwatrrecord.h" />
+    <ClInclude Include="..\modfile\records\obweaprecord.h" />
+    <ClInclude Include="..\modfile\records\obwrldrecord.h" />
+    <ClInclude Include="..\modfile\records\obwthrrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obammodatasubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obappadatasubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obarmodatasubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obatxtsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obbookdatasubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obbytesubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obclotdatasubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obcntosubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obcontdatasubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obctdasubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obctdtsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obdatasubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obdnamsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obdwordsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obefitsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obenamsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obenit8subrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obenitsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obfloatsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obformidarraysubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obformidsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obhedrsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obidledatasubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obingrenitsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obint64subrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obkeymdatasubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\oblighdatasubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\oblnamsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\oblongsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\oblvlosubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obmgefdatasubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obmiscdatasubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obnamesubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obpgrlsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obpldtsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obposanglesubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obptdtsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obqstasubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obrdgssubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obrdotsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obrdsdsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obrdwtsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obrefrdatasubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obschrsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obscitsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obscrosubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obsgstdatasubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obslgmdatasubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obsnamsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obspitsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obstring1subrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obstringsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obsubreccont.h" />
+    <ClInclude Include="..\modfile\subrecords\obsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obvnamsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obvtexsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obweapdatasubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obwlstsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obwordsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obxespsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obxlocsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obxnamsubrecord.h" />
+    <ClInclude Include="..\modfile\subrecords\obxtelsubrecord.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="obstats.log" />
+    <Text Include="obtestfile.log" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
